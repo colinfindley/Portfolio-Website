@@ -1,7 +1,7 @@
 title: Development Portfolio
 description: website to showcase my projects
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://colinfindley.github.io/Portfolio-Website/" # the base hostname & protocol for your site
+baseurl: "/Portfolio-Website" # the subpath of your site
+url: "https://colinfindley.github.io" # the base hostname & protocol for your site
 theme: minima # Jekyll theme
 plugins:
   - jekyll-feed
