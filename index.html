@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colin Findley Development Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Your CSS will be here */
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Portfolio</a></li>
+            <li><a href="https://www.linkedin.com/in/colinfindley2/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="resume.html">Resume</a></li>
+        </ul>
+    </nav>
+ 
+    <header>
+
+        <h1>Colin Findley</h1>
+        <h1>Development Portfolio</h1>
+        <hr>
+    </header>
+    <main>
+        
+        <section class="centered">
+
+             <!--Space Invaders-->
+            
+                <div class="project">
+                    <h2 class="video-title">Rebuilding Space Invaders From Scratch</h2>
+                    <div class="content-container">
+                        <div class="video-container">
+                            <video id="spaceInvaders" loop muted autoplay>
+                                <source src="SpaceInvaders.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <button class="toggle-sound" onclick="toggleSound('spaceInvaders')">🔇</button>
+                        </div>
+
+                        <div class="text-container">
+                            <p>
+                                One of my most significant projects involved spending several months building Space Invaders from scratch. 
+                                Throughout the project, I implemented various design patterns to ensure efficient and maintainable code.
+                                I documented those design patterns used and the rationale behind their selection in a detailed Github
+                                <a href="https://github.com/colinfindley/SpaceInvaders" target="_blank" rel="noopener noreferrer">write-up</a>. Above is a demonstration from
+                                my recreation of the game.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Game Engine-->
+                <div class="project">
+                    <h2 class="video-title">Creating a Game Engine in C++</h2>
+                    <div class="content-container">
+                        <div class="video-container">
+                            <video id="gameEngine" loop muted autoplay>
+                                <source src="GameEngine.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+
+                        <div class="text-container">
+                            <p>
+                                I designed and built a Video Game Engine using C++. 
+                                This project showcases my proficiency in C++ and my ability to create optimized and scalable software. 
+                                The engine includes advanced animation handling, a robust SIMD-optimized math library, and a 
+                                complex PCS tree data structure for managing hierarchical relationships. Additionally, it features dedicated 
+                                managers for meshes, cameras, and textures, showcasing my ability to manage complex systems and optimize 
+                                performance across different components. This project reflects my commitment to writing efficient, maintainable 
+                                code and my passion for tackling challenging technical problems. You can view the project and writeup on my 
+                                <a href="https://github.com/colinfindley/GameEngine/" target="_blank" rel="noopener noreferrer">Github</a>. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Tabulate-->
+                <div class="project">
+                    <h2 class="video-title">Tabulate: A Chrome Extension Built with React</h2>
+                    <div class="content-container">
+                        <div class="video-container">
+                            <video id="gameEngine" loop muted autoplay>
+                                <source src="Tabulate.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+
+                        <div class="text-container">
+                            <p>
+                                In an effort to tackle my own tab hoarding behavior, I developed Tabulate, a Chrome extension built with React.
+                                This project demonstrates my ability to create functional and user-friendly browser extensions. 
+                                Tabulate enhances tab management by allowing users to bookmark tabs, select and navigate between them,
+                                close tabs, and track the time since each tab was last viewed. This project showcases my proficiency 
+                                in React, state management, and user interface design, as well as my capability to address practical problems
+                                with innovative solutions. You can view the project and writeup on my 
+                                <a href="https://github.com/colinfindley/Tabulate" target="_blank" rel="noopener noreferrer">Github</a>. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
