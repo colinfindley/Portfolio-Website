@@ -1,0 +1,18 @@
+title: Development Portfolio
+description: website to showcase my projects
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://colinfindley.github.io/Portfolio-Website/" # the base hostname & protocol for your site
+theme: minima # Jekyll theme
+plugins:
+  - jekyll-feed
+markdown: kramdown
+permalink: pretty
+
+# Optional settings
+author:
+  name: "Colin Findley"
+  email: "colinfindley2@gmail.com"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
