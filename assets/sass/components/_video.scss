@@ -1,0 +1,15 @@
+.video-container {
+  box-sizing: border-box; /* Ensure padding and border are included in the dimensions */
+  width: 100%;            /* Let it scale to the container's width */
+  max-width: 800px;       /* Limit the maximum width */
+  margin: 0 auto;         /* Center the container horizontally */
+  position: relative;     /* For internal positioning, like the toggle button */
+  overflow: hidden;       /* Ensure no overflow from child elements */
+}
+
+.video-container video {
+  box-sizing: border-box; /* Explicitly set to avoid inheritance issues */
+  display: block;         /* Avoid extra spacing (default inline-block behavior) */
+  width: 100%;            /* Ensure it scales to the container's width */
+  height: auto;           /* Maintain the aspect ratio */
+}

@@ -1,71 +1,106 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colin Findley Development Portfolio</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Colin Findley Portfolio</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    </head>
+    <body class="is-preload">
 
- 
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html" class = "active">Portfolio</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="https://www.linkedin.com/in/colinfindley2/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-            </ul>
-        </nav>
-        <div class="websiteTitle">
-            <h1>Colin Findley</h1>
-            <h1>Development Portfolio</h1>
-        </div>
+        <!-- Sidebar -->
+            <section id="sidebar">
+                <div class="inner">
+                    <nav>
+                        <ul>
+                            <li><a href="#intro">Get to Know Me</a></li>
+                            <li><a href="#one">Software Projects</a></li>
+                            <li><a href="#two">Resume</a></li>
+                            <li>
+                                <a href="https://github.com/colinfindley" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/colinfindley2/" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-linkedin"></i> LinkedIn
+                                </a>
+                            </li>
 
-        <hr>
-    </header>
-    <main>
-        
-        <section class="centered">
+                        </ul>
+                    </nav>
+                </div>
+            </section>
 
-             <!--Space Invaders-->
-            
-                <div class="project">
-                    <h2 class="video-title">Rebuilding Space Invaders From Scratch</h2>
-                    <div class="content-container">
-                        <div class="video-container">
-                            <video id="spaceInvaders" loop muted autoplay>
-                                <source src="assets/SpaceInvaders.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                            <button class="toggle-sound" onclick="toggleSound('spaceInvaders')">🔇</button>
+        <!-- Wrapper -->
+            <div id="wrapper">
+
+                <!-- Get To Know Me -->
+                    <section id="intro" class="wrapper style1 fullscreen fade-up">
+                        <div class="inner">
+                            <h1>Get to Know Me</h1>
+                            <p>
+                                I recently graduated from Depaul University with my masters in Computer Science with a double major in Software Engineering and Real Time Systems. I am currently looking for a job in New York City as a software engineer. 
+                                I previously worked as a Research Software Engineer where I specialized in designing and programming online experiments using JavaScript, HTML, and CSS. 
+                                As of September 2024, my work has been <a href="https://psycnet.apa.org/doiLanding?doi=10.1037%2Faca0000705" target="_blank" rel="noopener noreferrer">published</a> 
+                                in the APA accredited journal, the Psychology of Aesthetics, Creativity and the Arts.
+                                Below, you will see various programming projects that showcase my profiency as a programmer and my command of software architecture design.
+                            </p>
                         </div>
-                    </div>
-                    <div class="text-container">
-                        <p>
-                            One of my most significant projects involved spending several months building Space Invaders from scratch. 
+                    </section>
+
+                <!-- Videos -->
+                    <section id="one" class="wrapper style2 spotlights">
+
+                         <!-- Tabulate Video -->
+                        <hr>
+                        <hr>
+                        <h2 style="text-align: center; margin-bottom: .2em; padding-top:.2em; padding-bottom: .2em">
+                            Tabulate: A Chrome Extension Built with React
+                        </h2>
+                        <video loop muted autoplay style="max-width: calc(100% - 18em); width: auto; margin: 0 auto; display: block;" controls>
+                            <source src="assets/Tabulate.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p style="padding: 3em; margin-right: 5em; margin-left: 5em; margin-bottom: 1.5em; border-radius: 0.25em;">
+                        In an effort to tackle my own tab hoarding behavior, I developed Tabulate, a Chrome extension built with React.
+                        This project demonstrates my ability to create functional and user-friendly browser extensions. 
+                        Tabulate enhances tab management by allowing users to bookmark tabs, select and navigate between them,
+                        close tabs, and track the time since each tab was last viewed. This project showcases my proficiency 
+                        in React, state management, and user interface design, as well as my capability to address practical problems
+                        with innovative solutions. You can view the project and writeup on my 
+                        <a href="https://github.com/colinfindley/Tabulate" target="_blank" rel="noopener noreferrer">Github</a>. 
+                        
+                        <!-- Space Invaders -->
+                        <hr>
+                        <h2 style="text-align: center; margin-bottom: .2em; padding-top:.2em; padding-bottom: .2em">
+                            Space Invaders
+                        </h2>
+                        <video loop muted autoplay style="max-width: calc(100% - 18em); width: auto; margin: 0 auto; display: block;" controls>
+                            <source src="assets/SpaceInvaders.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p style="padding: 3em; margin-right: 5em; margin-left: 5em; margin-bottom: 1.5em; border-radius: 0.25em;">
+                            One of my most significant projects involved spending several months building Space Invaders from scratch in C#. 
                             Throughout the project, I implemented various design patterns to ensure efficient and maintainable code.
                             I documented those design patterns used and the rationale behind their selection in a detailed Github
                             <a href="https://github.com/colinfindley/SpaceInvaders" target="_blank" rel="noopener noreferrer">write-up</a>. Above is a demonstration from
                             my recreation of the game.
                         </p>
-                    </div>
-                </div>
 
-                <!--Game Engine-->
-                <div class="project">
-                    <h2 class="video-title">Creating a Game Engine in C++</h2>
-                    <div class="content-container">
-                        <div class="video-container">
-                            <video id="gameEngine" loop muted autoplay>
-                                <source src="assets/GameEngine.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                    </div>
-                    <div class="text-container">
-                        <p>
+                        <!-- Game Engine -->
+                        <hr>
+
+                        <h2 style="text-align: center; margin-bottom: .2em; padding-top:.2em; padding-bottom: .2em">
+                            A Game Engine in C++
+                        </h2>
+                        <video loop muted autoplay style="max-width: calc(100% - 18em); width: auto; margin: 0 auto; display: block;" controls>
+                            <source src="assets/GameEngine.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p style="padding: 3em; margin-right: 5em; margin-left: 5em; margin-bottom: 1.5em; border-radius: 0.25em;">
                             I designed and built a Video Game Engine using C++. 
                             This project showcases my proficiency in C++ and my ability to create optimized and scalable software. 
                             The engine includes advanced animation handling, a robust SIMD-optimized math library, and a 
@@ -75,37 +110,31 @@
                             code and my passion for tackling challenging technical problems. You can view the project and writeup on my 
                             <a href="https://github.com/colinfindley/GameEngine/" target="_blank" rel="noopener noreferrer">Github</a>. 
                         </p>
-                    </div>
-                </div>
-
-                <!--Tabulate-->
-                <div class="project">
-                    <h2 class="video-title">Tabulate: A Chrome Extension Built with React</h2>
-                    <div class="content-container">
-                        <div class="video-container">
-                            <video id="gameEngine" loop muted autoplay>
-                                <source src="assets/Tabulate.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
+                        
+                    </section>
+                    
+                    <!-- Resume -->
+                    <section id="two" class="wrapper style3 fade-up">
+                        <hr>
+                        <hr>
+                        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; height: 100vh;">
+                            <h2 style="margin-bottom: 1.5rem;">Resume</h2>
+                            <iframe style="width: 70%; height: 90vh; border: none;" src="assets/resumeColin.pdf"></iframe>
                         </div>
-                    </div>
-                    <div class="text-container">
-                        <p>
-                            In an effort to tackle my own tab hoarding behavior, I developed Tabulate, a Chrome extension built with React.
-                            This project demonstrates my ability to create functional and user-friendly browser extensions. 
-                            Tabulate enhances tab management by allowing users to bookmark tabs, select and navigate between them,
-                            close tabs, and track the time since each tab was last viewed. This project showcases my proficiency 
-                            in React, state management, and user interface design, as well as my capability to address practical problems
-                            with innovative solutions. You can view the project and writeup on my 
-                            <a href="https://github.com/colinfindley/Tabulate" target="_blank" rel="noopener noreferrer">Github</a>. 
-                        </p>
-                    </div>
-                </div>
-                
+                    </section>
+                    
+                    
 
             </div>
-        </section>
-    </main>
-    <script src="scripts.js"></script>
-</body>
+
+        <!-- Scripts -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery.scrollex.min.js"></script>
+            <script src="assets/js/jquery.scrolly.min.js"></script>
+            <script src="assets/js/browser.min.js"></script>
+            <script src="assets/js/breakpoints.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
+
+    </body>
 </html>
